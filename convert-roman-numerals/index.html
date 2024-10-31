@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Números para Algarismos Romanos - Transforme Números Inteiros em Romanos Facilmente</title>
+    <meta name="description"
+        content="Use nosso conversor para transformar números inteiros em algarismos romanos de forma rápida e fácil. Digite um número e veja a magia acontecer!">
+    <meta name="keywords"
+        content="Conversor, Números Romanos, Algarismos Romanos, Converter Números, Ferramenta de Conversão">
+    <link rel="stylesheet" href="style.css">
+
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4457303488648074"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+
+    <div class="container">
+
+        <img src="th.png" alt="Imagem ilustrativa de números romanos">
+
+        <div class="right-side">
+
+            <h1>Conversor de Números Inteiros para Algarismos Romanos</h1>
+
+            <div class="conversor-input">
+                <input type="number" id="inputNumber" min="1" max="3999"
+                    placeholder="Digite um número inteiro. ex: 2000" />
+
+                <button onclick="convertToRomanNumerals()">
+
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="1em" height="1em" viewBox="0 0 24 24"
+                        stroke="currentColor" fill="currentColor">
+                        <path d="M16 15L24 15 20 20zM8 9L0 9 4 4z"></path>
+                        <path
+                            d="M21 6c0-1.654-1.346-3-3-3H7.161l1.6 2H18c.551 0 1 .448 1 1v10h2V6zM3 18c0 1.654 1.346 3 3 3h10.839l-1.6-2H6c-.551 0-1-.448-1-1V8H3V18z">
+                        </path>
+                    </svg>
+
+                </button>
+            </div>
+
+            <div class="conversor-response" id="result"></div>
+
+        </div>
+
+    </div>
+
+
+    <script>
+
+        function intToRomanNumerals(intNumber) {
+
+            const romanNumeralsMap = [
+                [1000, 'M'], [900, 'CM'], [500, 'D'], [400, 'CD'],
+                [100, 'C'], [90, 'XC'], [50, 'L'], [40, 'XL'],
+                [10, 'X'], [9, 'IX'], [5, 'V'], [4, 'IV'], [1, 'I']
+            ];
+
+            let romanNumerals = '';
+            for (let [value, simbol] of romanNumeralsMap) {
+                const count = Math.floor(intNumber / value);
+                romanNumerals += simbol.repeat(count);
+                intNumber %= value;
+            }
+
+            return romanNumerals;
+        }
+
+        function convertToRomanNumerals() {
+            const number = parseInt(document.getElementById('inputNumber').value);
+            const result = document.getElementById('result');
+
+            if (Number.isNaN(number) || number < 1 || number > 3999) {
+                result.innerHTML = '<p class="invalid">Por favor, insira um número entre 1 e 3999. </p>';
+                result.style.display = 'flex';
+                return
+            }
+
+            const romanNumerals = intToRomanNumerals(number);
+            result.innerHTML = `<p>O número em romano é: </p> <span>${romanNumerals}</span>`;
+            result.style.display = 'flex';
+        }
+    </script>
+</body>
+
+</html>
