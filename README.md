@@ -52,10 +52,11 @@
 <tr>
 <td style="width: 33.3333%; text-align: center; display: flex; flex-direction: column;">
     <span style="font-family: arial, helvetica, sans-serif; font-size: 12pt;">
-        <strong>Pomodoro APP</strong>
+        <strong>Interactive Animated Eyes</strong>
     </span>
-<img class="alignnone wp-image-371" src="https://urutaudev.com.br/wp-content/uploads/2024/07/imagem_2024-07-10_191220580-300x241.png" alt="pomodoro" width="199" height="160" />
-<a href="https://urutaudev.com.br/aplicativos/pomodoro-app/">Pomodoro App</a>
+
+<img class="alignnone wp-image-371" src=" https://urutaudev.com.br/wp-content/uploads/2024/12/aaaaaaaaaaaaaaaaa-300x168.jpg" alt="pomodoro" width="199" height="160" />
+<a href="https://urutaudev.com.br/aplicativos/pomodoro-app/">Interactive Animated Eyes</a>
 </td>
 <td style="width: 33.3333%; text-align: center;"></td>
 <td style="width: 33.3333%; text-align: center;"></td>
