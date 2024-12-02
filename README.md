@@ -35,3 +35,34 @@
 </tr>
 </tbody>
 </table>
+
+
+&nbsp;
+
+
+<table style="border-collapse: collapse; width: 100%;">
+    <thead>
+        <tr>
+            <th colspan="3">
+                Animações
+            </th>
+        </tr>
+    </thead>
+<tbody>
+<tr>
+<td style="width: 33.3333%; text-align: center;">
+    <span style="font-family: arial, helvetica, sans-serif; font-size: 12pt;">
+        <strong>Pomodoro APP</strong>
+    </span>
+
+    <img class="alignnone wp-image-371" src="https://urutaudev.com.br/wp-content/uploads/2024/07/imagem_2024-07-10_191220580-300x241.png" alt="pomodoro" width="199" height="160" />
+
+    <a href="https://urutaudev.com.br/aplicativos/pomodoro-app/">Pomodoro App</a>
+</td>
+<td style="width: 33.3333%; text-align: center;"></td>
+<td style="width: 33.3333%; text-align: center;"></td>
+<td style="width: 33.3333%; text-align: center;"></td>
+
+</tr>
+</tbody>
+</table>
