@@ -55,12 +55,30 @@
         <strong>Interactive Animated Eyes</strong>
     </span>
 
-<img class="alignnone wp-image-371" src=" https://urutaudev.com.br/wp-content/uploads/2024/12/aaaaaaaaaaaaaaaaa-300x168.jpg" alt="pomodoro" width="199" height="160" />
+<img class="alignnone wp-image-371" src="https://urutaudev.com.br/wp-content/uploads/2024/12/aaaaaaaaaaaaaaaaa-300x168.jpg" alt="Interactive Animated Eyes" width="199" height="160" />
 <a href="https://urutaudev.com.br/aplicativos/pomodoro-app/">Interactive Animated Eyes</a>
 </td>
-<td style="width: 33.3333%; text-align: center;"></td>
-<td style="width: 33.3333%; text-align: center;"></td>
-<td style="width: 33.3333%; text-align: center;"></td>
+<td style="width: 33.3333%; text-align: center;">
+    <span style="font-family: arial, helvetica, sans-serif; font-size: 12pt;">
+        <strong></strong>
+    </span>
+    <img class="alignnone wp-image-371" width="199" height="160" />
+    <a href="https://urutaudev.com.br"></a>
+</td>
+<td style="width: 33.3333%; text-align: center;">
+    <span style="font-family: arial, helvetica, sans-serif; font-size: 12pt;">
+        <strong></strong>
+    </span>
+    <img class="alignnone wp-image-371" width="199" height="160" />
+    <a href="https://urutaudev.com.br"></a>
+</td>
+<td style="width: 33.3333%; text-align: center;">
+    <span style="font-family: arial, helvetica, sans-serif; font-size: 12pt;">
+        <strong></strong>
+    </span>
+    <img class="alignnone wp-image-371" width="199" height="160" />
+    <a href="https://urutaudev.com.br"></a>
+</td>
 </tr>
 </tbody>
 </table>
