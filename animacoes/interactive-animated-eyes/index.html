@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Animated Eyes - Fun CSS & JavaScript Animation</title>
+
+    <!-- Meta Tags para SEO -->
+    <meta name="description"
+        content="Explore a fun interactive animation of eyes following your cursor. Created using HTML, CSS, and JavaScript with blinking effects for a realistic touch.">
+    <meta name="keywords"
+        content="animated eyes, CSS animation, JavaScript animation, interactive eyes, HTML project, fun web animations, cursor tracking">
+    <meta name="author" content="C.Jr">
+
+    <!-- Meta Tags para Redes Sociais -->
+    <meta property="og:title" content="Interactive Animated Eyes - Fun CSS & JavaScript Animation">
+    <meta property="og:description"
+        content="Explore a fun interactive animation of eyes following your cursor. Created using HTML, CSS, and JavaScript with blinking effects for a realistic touch.">
+    <meta property="og:image" content="https://urutaudev.com.br/wp-content/uploads/2024/11/dash-300x142.jpg">
+    <meta property="og:url" content="https://urutaudev.com.br/aplicativos/animacoes/interactive-animated-eyes/">
+    <meta property="og:type" content="website">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Interactive Animated Eyes - Fun CSS & JavaScript Animation">
+    <meta name="twitter:description"
+        content="Explore a fun interactive animation of eyes following your cursor. Created using HTML, CSS, and JavaScript with blinking effects for a realistic touch.">
+    <meta name="twitter:image" content="https://urutaudev.com.br/wp-content/uploads/2024/11/dash-300x142.jpg">
+
+    <style>
+        body {
+            background-color: #121f32;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .eye-container {
+            display: flex;
+            gap: 30px;
+        }
+
+        .eye {
+            width: 100px;
+            height: 100px;
+            background-color: rgb(255, 216, 98);
+            border: 4px solid #000;
+            border-radius: 50%;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 5px #666;
+            overflow: hidden;
+        }
+
+        .pupil {
+            width: 25px;
+            height: 25px;
+            background-color: #000;
+            border-radius: 50%;
+            position: absolute;
+            transition: transform 0.1s ease-out;
+        }
+
+        .eyelid {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgb(85, 89, 95);
+            border-radius: 50%;
+            animation: blink 5s infinite;
+            transform-origin: top;
+            transform: scaleY(0);
+            pointer-events: none;
+        }
+
+        @keyframes blink {
+
+            0%,
+            92%,
+            100% {
+                transform: scaleY(0);
+            }
+
+            94%,
+            96% {
+                transform: scaleY(1);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="eye-container">
+        <div class="eye">
+            <div class="pupil"></div>
+            <div class="eyelid"></div>
+        </div>
+        <div class="eye">
+            <div class="pupil"></div>
+            <div class="eyelid"></div>
+        </div>
+    </div>
+
+    <script>
+        const eyes = document.querySelectorAll('.eye');
+        document.addEventListener('mousemove', (event) => {
+            requestAnimationFrame(() => {
+                eyes.forEach(eye => {
+                    const pupil = eye.querySelector('.pupil');
+                    const rect = eye.getBoundingClientRect();
+                    const eyeX = rect.left + rect.width / 2;
+                    const eyeY = rect.top + rect.height / 2;
+
+                    const dx = event.clientX - eyeX;
+                    const dy = event.clientY - eyeY;
+
+                    const angle = Math.atan2(dy, dx);
+                    const distance = Math.min(35, Math.hypot(dx, dy));
+
+                    pupil.style.transform = `translate(${Math.cos(angle) * distance}px, ${Math.sin(angle) * distance}px)`;
+                });
+            });
+        });
+    </script>
+
+    <script src="main.js"></script>
+    
+</body>
+
+</html>
